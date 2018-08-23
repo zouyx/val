@@ -1,7 +1,7 @@
 <template>
-  <Window title="Test Demo" width="100px" v-on:close="exit">
+  <Window title="计算器" width="100" height="100" margined v-on:close="exit" ref="mainWindow">
     <Box horizontal padded>
-      <Group stretchy title="计算器">
+      <Group stretchy>
         <Box>
           <TextInput v-model="text" readonly="true"/>
           <Box padded margined horizontal="true">
@@ -25,6 +25,7 @@
             <Button v-on:click="click('/')">/</Button>
             <Button v-on:click="cal('=')">=</Button>
           </Box>
+          <Button @click="selectFile">Browse...</Button>
         </Box>
       </Group>
     </Box>
@@ -51,6 +52,13 @@
       cal(symbol) {
         this.text = eval(this.text)
       },
+      selectFile() {
+        const window = this.$refs.mainWindow.window;
+        const filename = libui.UiDialogs.openFile(window);
+        if (filename) {
+          console.log(filename)
+        }
+      }
     }
   }
 </script>

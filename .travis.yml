@@ -4,7 +4,8 @@ language: node_js
 node_js:
 - "7"
 install:
-- npm install
+  - sudo apt install build-essential libgtk-3-dev
+  - npm install
 script:
-- npm run build
-- npm run start
+  - npm run build
+  - npm run start

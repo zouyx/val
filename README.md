@@ -2,6 +2,8 @@
 
 > 基于vuejs实现的桌面应用
 
+![main](img/val.png)
+
 Installation
 ------------
 

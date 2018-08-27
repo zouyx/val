@@ -1,18 +1,31 @@
 # val
 
-> A Vuido project
+> 基于vuejs实现的桌面应用
 
-## Build Setup
+Installation
+------------
 
 ``` bash
-# install dependencies
 npm install
 
-# build
 npm run build
-
-# run the bundled script
-npm start
 ```
 
-For detailed explanation on how things work, consult the [Vuido documentation](https://vuido.mimec.org/).
+# Features
+* 加减乘除
+
+# Usage
+``` bash
+npm run start
+```
+
+# Contribution
+  * Source Code: https://github.com/zouyx/val/
+  * Issue Tracker: https://github.com/zouyx/val/issues
+  
+# License
+The project is licensed under the [Apache 2 license](https://github.com/zouyx/agollo/blob/master/LICENSE).
+
+# Reference
+使用 Vuido 编译出Application，详见：
+[Vuido documentation](https://vuido.mimec.org/).
